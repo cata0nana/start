@@ -23,7 +23,7 @@ done
 sleep 10
 #4
 
-docker exec -it p1 /bin/bash -c 'echo -e "M8trujBeomGZCfqssWupwYRK\nCFFm1C6d3HrtjFWJSFAFtJ4G"  > /root/0nord_pass' &&
-docker exec -it p2 /bin/bash -c 'echo -e "M8trujBeomGZCfqssWupwYRK\nCFFm1C6d3HrtjFWJSFAFtJ4G"  > /root/0nord_pass' &&
-docker exec -it p3 /bin/bash -c 'echo -e "M8trujBeomGZCfqssWupwYRK\nCFFm1C6d3HrtjFWJSFAFtJ4G"  > /root/0nord_pass' &&
-docker exec -it p4 /bin/bash -c 'echo -e "M8trujBeomGZCfqssWupwYRK\nCFFm1C6d3HrtjFWJSFAFtJ4G"  > /root/0nord_pass'
+docker exec -it p1 /bin/bash -c 'curl https://raw.githubusercontent.com/cata0nana/start/main/p/1 > /root/0nord_pass' &&
+docker exec -it p2 /bin/bash -c 'curl https://raw.githubusercontent.com/cata0nana/start/main/p/1 > /root/0nord_pass' &&
+docker exec -it p3 /bin/bash -c 'curl https://raw.githubusercontent.com/cata0nana/start/main/p/1 > /root/0nord_pass' &&
+docker exec -it p4 /bin/bash -c 'curl https://raw.githubusercontent.com/cata0nana/start/main/p/1 > /root/0nord_pass'
