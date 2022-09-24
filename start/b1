@@ -20,7 +20,7 @@ for (( i=1; i <= 5; i++ )); do
 done
 
 ############################################################################################################################
-sleep 10
+sleep 2
 #4
 
 docker exec -it p1 /bin/bash -c 'curl https://raw.githubusercontent.com/cata0nana/start/main/p/1 > /root/0nord_pass' &&
