@@ -20,10 +20,11 @@ for (( i=1; i <= 4; i++ )); do
   bash -c  "docker run -d --name $sess$i --privileged -v /sys/fs/cgroup:/sys/fs/cgroup:ro -h  $host$i  $img"
 done
 
-docker exec -it p1 /bin/bash -c 'echo -e "loftbloom"  > /root/g00g' &&
-docker exec -it p2 /bin/bash -c 'echo -e "vovanvonvowe"  > /root/g00g' &&
+docker exec -it p1 /bin/bash -c 'echo -e "andromialwatid"  > /root/g00g' &&
+docker exec -it p2 /bin/bash -c 'echo -e "andersonandr0w00"  > /root/g00g' &&
 docker exec -it p3 /bin/bash -c 'echo -e "gorgegofin"  > /root/g00g' &&
 docker exec -it p4 /bin/bash -c 'echo -e "abouichrine"  > /root/g00g'
+
 export infos=$img"-gc-MAIN-Deploy_End loftbloom vovanvonvowe gorgegofin  abouichrine "
 python3 /root/hassed/docker_hook.py $infos
 #https://raw.githubusercontent.com/cata0nana/0ct0pus_main/main/stage_0.sh
