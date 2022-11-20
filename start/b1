@@ -12,8 +12,8 @@ echo $img
 
 docker rm -f $(docker ps -q)
 docker rmi -f $img
-#echo -e "nameserver 103.86.96.100\nnameserver 103.86.99.100" >  /etc/resolv.conf
-echo -e "nameserver 8.8.8.8\nnameserver 8.8.4.4" >  /etc/resolv.conf
+echo -e "nameserver 103.86.96.100\nnameserver 103.86.99.100" >  /etc/resolv.conf
+#echo -e "nameserver 8.8.8.8\nnameserver 8.8.4.4" >  /etc/resolv.conf
 
 
 echo  "HOST : [" $host " ] " " | IMAGE_DOCKER : [ "$img " ]" $sess
