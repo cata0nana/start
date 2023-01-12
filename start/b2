@@ -5,7 +5,10 @@ export su_img_3=$(cat read.me)
 echo  $su_img_3
 export host=$su_img_3"-gc-emma-"
 export img2="quay.io/xm0uray/site_5:tag1"
-export img="quay.io/xm0uray/site_5:main"
+#export img="quay.io/xm0uray/site_5:main"
+
+export img="quay.io/mylastres0rt05/site_5_image_q"
+
 export sess="p"
 echo $img
 
