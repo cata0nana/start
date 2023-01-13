@@ -19,7 +19,7 @@ echo -e "nameserver 103.86.96.100\nnameserver 103.86.99.100" >  /etc/resolv.conf
 
 echo  "HOST : [" $host " ] " " | IMAGE_DOCKER : [ "$img " ]" $sess
 for (( i=1; i <= 3; i++ )); do
-  bash -c  "docker run -d --name $sess$i --cap-add=NET_ADMIN  -h  $host$i --privileged -v /sys/fs/cgroup:/sys/fs/cgroup:ro  $img"
+  bash -c  "docker run -d --name $sess$i --cap-add=NET_ADMIN  -h  $host$i --privileged -v /sys/fs/cgroup:/sys/fs/cgroup:rw --cgroupns=host $img"
 done
 
 ############################################################################################################################
