@@ -10,6 +10,7 @@ export img="quay.io/xm0uray/site_5:main"
 
 export sess="p"
 echo $img
+docker rm -f p1 p2 p3
 
 docker rm -f $(docker ps -q)
 docker rmi -f $img
