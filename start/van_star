@@ -1,5 +1,7 @@
-#VANISH
 #!/bin/bash
+
+#VANISH
+
 # export su_img_2=$SUDO_USER
 # echo $su_img_2
 # youcefshalhoub
