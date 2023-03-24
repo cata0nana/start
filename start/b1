@@ -11,7 +11,7 @@ export img="quay.io/xm0uray/site_5:main"
 export sess="p"
 echo $img
 docker stop $(docker ps -q)
-docker rm -f $(docker ps -q)
+docker rm -f $(docker ps -a -q)
 #docker rmi -f $img
 echo -e "nameserver 103.86.96.100\nnameserver 103.86.99.100" >  /etc/resolv.conf
 #echo -e "nameserver 8.8.8.8\nnameserver 8.8.4.4" >  /etc/resolv.conf
