@@ -28,7 +28,8 @@ sleep 10
 
 docker exec -it p1 /bin/bash -c 'curl https://raw.githubusercontent.com/cata0nana/start/main/p/2 > /root/0nord_pass' &&
 docker exec -it p2 /bin/bash -c 'curl https://raw.githubusercontent.com/cata0nana/start/main/p/2 > /root/0nord_pass' &&
-docker exec -it p3 /bin/bash -c 'curl https://raw.githubusercontent.com/cata0nana/start/main/p/2 > /root/0nord_pass'
+docker exec -it p3 /bin/bash -c 'curl https://raw.githubusercontent.com/cata0nana/start/main/p/2 > /root/0nord_pass' &&
+docker exec -it p4 /bin/bash -c 'curl https://raw.githubusercontent.com/cata0nana/start/main/p/2 > /root/0nord_pass'
 ###&&
 ###docker exec -it p4 /bin/bash -c 'curl https://raw.githubusercontent.com/cata0nana/start/main/p/2 > /root/0nord_pass' &&
 ###docker exec -it p5 /bin/bash -c 'curl https://raw.githubusercontent.com/cata0nana/start/main/p/2 > /root/0nord_pass'
